@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style> body { display: flex; flex-direction: column; min-height: 100vh; } .main-content { flex: 1; } </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><strong>Ronald Jangam</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+          </ul>
+          <span class="navbar-text"><i class="fa-solid fa-code fa-lg"></i></span>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5 main-content">
+        <h2 class="mb-4">Projects</h2>
+        <div class="accordion" id="projectsAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                        JSpotlight | Java, Spring Boot, JavaFX, H2, DeepLearning4J
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1556740738-b6a63e2775df?q=80&w=2070" class="img-fluid rounded" alt="Photo management application interface">
+                            </div>
+                            <div class="col-md-8">
+                                <p>I engineered a full-stack photo management application with a Spring Boot backend and JavaFX desktop client. It features REST endpoints for CRUD operations, multipart file uploads, and a pre-trained VGG16 deep learning model for automatic content tag generation. Its "local-first" architecture ensures user privacy by processing all image data on the local machine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                        DebtWise | Java, JavaFX, FXML
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                       <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070" class="img-fluid rounded" alt="Financial management application dashboard">
+                            </div>
+                            <div class="col-md-8">
+                                <p>This desktop financial management application was architected using Java and JavaFX, strictly adhering to the Model-View-Controller (MVC) design pattern. I engineered the core logic for complete CRUD (Create, Read, Update, Delete) operations, enabling users to efficiently manage debts, income, and expenses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                        MiniGit Version Control System | C++, C++17 Filesystem, Google Test
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#projectsAccordion">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070" class="img-fluid rounded" alt="Source code on a screen">
+                            </div>
+                            <div class="col-md-8">
+                                <p>I engineered a command-line version control system in C++ from the ground up, mimicking the core functionality of Git, including file staging, committing, and checkout. The commit history was implemented using a singly linked list, and a custom hash table with chaining was developed to store and index commit messages for efficient keyword-based searching.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-4 mt-5">
+        <div class="container">
+             <p class="mb-2">Connect with me on social media:</p>
+            <a href="https://www.linkedin.com/in/ronald-gospel-jangam/" target="_blank" class="text-dark mx-2 fs-4"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ronaldjangam" target="_blank" class="text-dark mx-2 fs-4"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/" target="_blank" class="text-dark mx-2 fs-4"><i class="fab fa-twitter"></i></a>
+            <p class="text-muted mt-3 mb-0">&copy; 2025 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
